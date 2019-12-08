@@ -4,7 +4,7 @@ const template = require('./template.js');
 const app = express();
 const values = ['Some value' , 'Some another value'];
 
-app.set('views', './views');
+app.set('views', __dirname + '/views');
 app.set('view engine', 'pug');
 app.use(express.json());
 
